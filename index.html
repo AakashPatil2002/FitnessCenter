@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="./images/illlustrations/logo-3.png">
+    <title>Fitness Center</title>
+</head>
+
+<body onload="hideloder()">
+    <div  class="loader">
+        <div class="preloader">
+            <div class="barbell">
+                <div class="weight-left"></div>
+                <div class="weight-right"></div>
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+        <div class="text">Getting Ready to Pump Some Iron...</div>
+    </div>
+    <section id="wrapper" class="wrapper">
+        <header class="header pb-md-5">
+            <nav class="navigation py-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="d-flex justify-content-between">
+                                <img class="me-lg-3 logo" src="./images/illlustrations/logo-3.png" alt="logo">
+                                <ul class="d-none d-lg-flex nav-list">
+                                    <li><a class="nav-a" href="#">Home</a></li>
+                                    <li><a class="nav-a" href="#">Pages</a></li>
+                                    <li><a class="nav-a" href="#">Blog</a></li>
+                                    <li><a class="nav-a" href="#">Shop</a></li>
+                                    <li><a class="nav-a" href="#">Contact Us</a></li>
+                                    <li><a class="nav-a pe-0" href="#"><i
+                                                class="bi bi-bag-dash fs-5 fw-bold ms-2"></i></a><span
+                                            class="badge bg-danger">0</span> </li>
+                                    <li><a class="nav-a" href="#"><i class="bi bi-search fs-5"></i></a></li>
+                                </ul>
+                                <ul class="d-flex d-lg-none justify-content-between nav-list ps-0">
+                                    <li><a class="nav-a pe-0" href="#"><i
+                                                class="bi bi-bag-dash fs-5 fw-bold ms-2"></i></a></li>
+                                    <li><a class="nav-a" href="#"><i class="bi bi-search fs-5"></i></a></li>
+                                    <li><a class="nav-a" href="#"><i class="bi bi-list fs-4"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-none d-xl-block col-xl-3">
+                            <div class="text-end">
+                                <a class="find-us" href="#">Find us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="hero">
+                            <img class="img-fluid" src="./images/illlustrations/hero-image-2.jpg" alt="Hero image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h1-text">
+                            <h1 class="h1">Change With Us</h1>
+                        </div>
+                        <div class="my-md-5 text-white">
+                            <h4 class="hero-date">06/06-30/06</h4>
+                            <p class="gray-para d-none d-xl-block">Dicta sunt explicabo. Nemo voluptatem quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia. Dicta sunt explicabo.</p>
+                            <a class="fs-5 fw-medium text-uppercase text-white text-decoration-none" href="#">Learn more
+                                <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="hero-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
+                        <div class="cl-container">
+                            <div>
+                                <img class="cl-img" src="./images/illlustrations/class_2_1.png" alt="">
+                            </div>
+                            <div class="cl-overlay">
+                                <div class="cl-text">
+                                    <a class="cl-h3" href="#">
+                                        <h3>Yoga & Pilates</h3>
+                                    </a>
+                                    <p class="cl-p">Before starting a new fitness regimen, it's advisable to consult
+                                        with healthcare.</p>
+                                    <div class="rm-block">
+                                        <a class="read-more" href="#">read-more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
+                        <div class="cl-container">
+                            <div>
+                                <img class="cl-img" src="./images/illlustrations/class_2_2.png" alt="">
+                            </div>
+                            <div class="cl-overlay">
+                                <div class="cl-text">
+                                    <a class="cl-h3" href="#">
+                                        <h3>Fitness & Gym</h3>
+                                    </a>
+                                    <p class="cl-p">Before starting a new fitness regimen, it's advisable to consult
+                                        with healthcare.</p>
+                                    <div class="rm-block">
+                                        <a class="read-more" href="#">read-more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
+                        <div class="cl-container">
+                            <div>
+                                <img class="cl-img" src="./images/illlustrations/class_2_3.png" alt="">
+                            </div>
+                            <div class="cl-overlay">
+                                <div class="cl-text">
+                                    <a class="cl-h3" href="#">
+                                        <h3>Personal Training</h3>
+                                    </a>
+                                    <p class="cl-p">Before starting a new fitness regimen, it's advisable to consult
+                                        with healthcare.</p>
+                                    <div class="rm-block">
+                                        <a class="read-more" href="#">read-more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
+                        <div class="cl-container">
+                            <div>
+                                <img class="cl-img" src="./images/illlustrations/class_2_4.png" alt="">
+                            </div>
+                            <div class="cl-overlay">
+                                <div class="cl-text">
+                                    <a class="cl-h3" href="#">
+                                        <h3>Boxing Class</h3>
+                                    </a>
+                                    <p class="cl-p">Before starting a new fitness regimen, it's advisable to consult
+                                        with healthcare.</p>
+                                    <div class="rm-block">
+                                        <a class="read-more" href="#">read-more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
+                        <div class="cl-container">
+                            <div>
+                                <img class="cl-img" src="./images/illlustrations/class_2_5.png" alt="">
+                            </div>
+                            <div class="cl-overlay">
+                                <div class="cl-text">
+                                    <a class="cl-h3" href="#">
+                                        <h3>CrossFit Training</h3>
+                                    </a>
+                                    <p class="cl-p">Before starting a new fitness regimen, it's advisable to consult
+                                        with healthcare.</p>
+                                    <div class="rm-block">
+                                        <a class="read-more" href="#">read-more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
+                        <div class="cl-container">
+                            <div>
+                                <img class="cl-img" src="./images/illlustrations/class_2_6.png" alt="">
+                            </div>
+                            <div class="cl-overlay">
+                                <div class="cl-text">
+                                    <a class="cl-h3" href="#">
+                                        <h3>Psycho Training</h3>
+                                    </a>
+                                    <p class="cl-p">Before starting a new fitness regimen, it's advisable to consult
+                                        with healthcare.</p>
+                                    <div class="rm-block">
+                                        <a class="read-more" href="#">read-more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-classes">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5 col-xl-4">
+                        <span class="f-services">featured services</span>
+                        <h2 class="h2-heading">Our Classes</h2>
+                    </div>
+                    <div class="col-lg-5">
+                        <p class="gray-para">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur. Dicta sunt explicabo.</p>
+                    </div>
+                    <div class="col-lg-2 text-start text-lg-end">
+                        <a class="view-all"
+                            href="#">view all <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-md-4 mb-5" data-aos="zoom-out-up">
+                        <div class="class cardio-workout">
+                            <div>
+                                <h4 class="class-h4">cardio workouts</h4>
+                                <p class="classes-para">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="classes-overlay">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5" data-aos="zoom-out-up">
+                        <div class="class trx-training">
+                            <div>
+                                <h4 class="class-h4">trx training</h4>
+                                <p class="classes-para">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="classes-overlay">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5" data-aos="zoom-out-up">
+                        <div class="class body-pump">
+                            <div>
+                                <h4 class="class-h4">body pump</h4>
+                                <p class="classes-para">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="classes-overlay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="f-services">Motivation for You</span>
+                    <h2 class="h2-heading">Strength lies not in what you can do, but in overcoming what you cannot do.
+                    </h2>
+                    <h5 class="text-white fw-bold pt-md-3">Piter Bowman</h5>
+                    <p class="gray-para">Creative director </p>
+                </div>
+            </div>
+        </section>
+        <section class="discover">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6" data-aos="zoom-out-right">
+                        <div class="px-2">
+                            <img class="img-fluid" src="./images/illlustrations/more-than-fitness-center.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-content">
+                        <div class="px-2">
+                            <span class="f-services">Discover the fitflex</span>
+                            <h2 class="h2-heading">More than a fitness centre</h2>
+                            <p class="gray-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis
+                                iste.</p>
+                            <p class="gray-para">Sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                                Sed ut perspiciatis unde iste.</p>
+                            <span class="d-inline-block my-4 fs-2 fw-bold text-white"><i
+                                    class="bi bi-arrow-down"></i></span>
+                            <div class="row">
+                                <div class="col-6 d-left">
+                                    <h2><span class="counter">10</span>+</h2>
+                                    <hr>
+                                    <h4 class="mb-5">Years</h4>
+                                    <h2><span class="counter">15</span>+</h2>
+                                    <hr>
+                                    <h4>Zones</h4>
+                                </div>
+                                <div class="col-6 d-left">
+                                    <h2><span class="counter">100</span>+</h2>
+                                    <hr>
+                                    <h4 class="mb-5">Programs</h4>
+                                    <h2><span class="counter">30</span>+</h2>
+                                    <hr>
+                                    <h4>Classes</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sadra">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 order-2 order-md-0">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <img class="img-size rounded-circle" src="./images/illlustrations/sm-1.jpg" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="text-white my-3 text">Sandra Phillips</h5>
+                                    <p class="gray-para">Crossfitter</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <img class="img-size rounded-circle" src="./images/illlustrations/sm-2.jpg" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="text-white my-3">Olivia Brook</h5>
+                                    <p class="gray-para">Bodybuilder</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <img class="img-size rounded-circle" src="./images/illlustrations/sm-3.jpg" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="text-white my-3">Jack Morison</h5>
+                                    <p class="gray-para">Athlete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 offset-md-1 mb-5">
+                        <div class="owl-carousel owl-theme sadra-carousel">
+                            <div class="item">
+                                <p class="text-white gray-para">Quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;</p>
+                                <p class="text-white gray-para">Nemo enim ipsam voluptatem quia voluptas sit aspernatur,
+                                    sed quia consequuntur magni dolores.</p>
+                               
+                            </div>
+                            <div class="item">
+                                <p class="text-white gray-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati molestias possimus quas numquam rem assumenda nam recusandae .&nbsp;</p>
+                                <p class="text-white gray-para">Nemo enim ipsam voluptatem quia voluptas sit aspernatur,
+                                    sed quia consequuntur magni dolores.</p>
+                                
+                            </div>
+                            <div class="item">
+                                <p class="text-white gray-para">Quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;</p>
+                                <p class="text-white gray-para">Nemo enim ipsam voluptatem quia voluptas sit aspernatur,
+                                    sed quia consequuntur magni dolores.</p>
+                            </div>  
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <div class="container-fluid">
+                <div class="mb-md-5">
+                    <video src="./video/video1.mp4" controls muted autoplay loop class="video-clip">
+                    </video>
+                </div>
+                <div class=".container text-center">
+                    <p class="text-white fs-6 fs-md-5 fw-bold">Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="empower">
+            <div class="container">
+                <div class="text-center col-12 col-md-8 m-auto">
+                    <h2 class="h2-heading">Empower your fitness <br> journey with us</h2>
+                    <p class="empower-para">Elevate your fitness journey at our gym and fitness center, a dynamic space
+                        where strength meets vitality. Discover a range of eight cutting-edge facilities and services
+                        meticulously designed to empower your wellness and ignite your fitness goals. </p>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-6">
+                        <div data-aos="zoom-out-right">
+                            <div class="emp-img-div">
+                                <img class="scale"
+                                    src="./images/illlustrations/asian-sportswoman-slowly-lift-up-weight-machine-or-6TFJJPZ.png"
+                                    alt="">
+                            </div>
+                            <div class="row align-items-center py-4">
+                                <div class="col-12 col-sm-8">
+                                    <h3 class="h3-heading">
+                                        Strength fusion
+                                    </h3>
+                                    <p class="empower-para">Combine the power of resistance training and functional
+                                        movements.</p>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <a class="join-c float-sm-end" href="#">Join classes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-out-right">
+                            <div class="emp-img-div">
+                                <img class="scale"
+                                    src="./images/illlustrations/young-man-strengthens-the-muscles-of-the-hands-of-AJ4QSPZ.png"
+                                    alt="">
+                            </div>
+                            <div class="row align-items-center py-4">
+                                <div class="col-12 col-sm-8">
+                                    <h3 class="h3-heading">
+                                        HIIT revolution
+                                    </h3>
+                                    <p class="empower-para">Experience the intensity of High-Intensity Interval
+                                        Training.</p>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <a class="join-c float-sm-end" href="#">Join classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div data-aos="zoom-out-left">
+                            <div class="emp-img-div">
+                                <img class="scale"
+                                    src="./images/illlustrations/sportsman-training-on-treadmill-in-gym-K7RCEHS.png"
+                                    alt="">
+                            </div>
+                            <div class="row align-items-center py-4">
+                                <div class="col-12 col-sm-8">
+                                    <h3 class="h3-heading">
+                                        Cardio blast
+                                    </h3>
+                                    <p class="empower-para">Rev up your heart rate with high-intensity cardio workouts.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <a class="join-c float-sm-end" href="#">Join classes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-out-left">
+                            <div class="emp-img-div">
+                                <img class="scale"
+                                    src="./images/illlustrations/women-aqua-aerobics-class-in-water-sport-center-P8UW5SE-1.png"
+                                    alt="">
+                            </div>
+                            <div class="row align-items-center py-4">
+                                <div class="col-12 col-sm-8">
+                                    <h3 class="h3-heading">
+                                        Mindful meditation
+                                    </h3>
+                                    <p class="empower-para">Calm your mind and nourish your soul through guided
+                                        meditation.</p>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <a class="join-c float-sm-end" href="#">Join classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-img">
+            <div class="text-center col-12 col-md-8 m-auto">
+                <h2 class="h2-heading">Our Team</h2>
+                <p class="empower-para">Elevate your fitness journey at our gym and fitness center, a dynamic space
+                    where strength meets vitality. Discover a range of eight cutting-edge facilities and services
+                    meticulously designed to empower your wellness and ignite your fitness goals. </p>
+            </div>
+            <div class="container-fluid py-3">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 px-0">
+                        <div class="ss-1">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 px-0">
+                        <div class="ss-2">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 px-0">
+                        <div class="ss-3">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 px-0">
+                        <div class="ss-4">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 px-0">
+                        <div class="ss-5">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 px-0">
+                        <div class="ss-6">
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 px-0 pe-lg-5">
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-end align-items-center h-100 mt-3 mt-lg-0">
+                            <span class="circle ">Out Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest-news">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <span class="f-services">Our Blog</span>
+                        <h2 class="h2-heading">Latest news</h2>
+                    </div>
+                    <div class="col-lg-7 pt-5">
+                        <div class="row justify-content-between">
+                            <div class="col-sm-6">
+                                <p><span class="text-white red-h">News &ThickSpace;</span><span class="red-h np"> .
+                                        November 17, 2023</span></p>
+                                <h4 class="latest-n-h4">Innovative fitness trends to watch out for</h4>
+                                <i class="bi bi-arrow-right text-white fs-5"></i>
+                            </div>
+                            <div class="col-sm-5">
+                                <p><span class="red-h text-white">News &ThickSpace;</span><span class="red-h np"> .
+                                        November 17, 2023</span></p>
+                                <h4 class="latest-n-h4">Integrating flexibility into your program</h4>
+                                <i class="bi bi-arrow-right text-white fs-5"></i>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><span class="text-white red-h">Training &ThickSpace;</span><span class="red-h np"> .
+                                        November 17, 2023</span></p>
+                                <h4 class="latest-n-h4">Reebok launches new fitness collection</h4>
+                                <i class="bi bi-arrow-right text-white fs-5"></i>
+                            </div>
+                            <div class="col-sm-5">
+                                <p><span class="red-h text-white">Training &ThickSpace;</span><span class="red-h np"> .
+                                        November 17, 2023</span></p>
+                                <h4 class="latest-n-h4">Nutrition tips for your best workout</h4>
+                                <i class="bi bi-arrow-right text-white fs-5"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="insta-block">
+            <div class="container-fluid px-0">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-sm-4 col-md-2">
+                        <div class="in-1"></div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-2">
+                        <div class="in-2"></div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-2">
+                        <div class="in-3"></div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-2">
+                        <div class="in-4"></div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-2">
+                        <div class="in-5"></div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-2">
+                        <div class="in-6"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid text-white">
+                <div class="row justify-content-between mb-5">
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <img class="logo" src="./images/illlustrations/logo-3.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <h2 class="h2-heading">Your ultimate fitness centre</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between mb-5">
+                    <div class="col-md-3 mb-5">
+                        <h4 class="f-h4">Newsletter Signup</h4>
+                        <form>
+                            <input class="email" type="text" placeholder="Enter Your Email Address ">
+                            <hr>
+                            <input type="checkbox">
+                            <span class="agree">i agree to <a href="#">Privacy Policy</a></span>
+                        </form>
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <div class="row">
+                                <div class="col-6 col-md-4 mb-5">
+                                    <h4 class="f-h4">Socials</h4>
+                                    <ul class="f-list ps-0">
+                                        <li><a class="fl" href="#">Facebook</a></li>
+                                        <li><a class="fl" href="#">Twitter</a></li>
+                                        <li><a class="fl" href="#">Dribble</a></li>
+                                        <li><a class="fl" href="#">Instagram</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4 mb-5">
+                                    <h4 class="f-h4">Menu</h4>
+                                    <ul class="f-list ps-0">
+                                        <li><a class="fl" href="#">Home</a></li>
+                                        <li><a class="fl" href="#">Services</a></li>
+                                        <li><a class="fl" href="#">About Us</a></li>
+                                        <li><a class="fl" href="#">Shop</a></li>
+                                        <li><a class="fl" href="#">Contacts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <h4 class="f-h4">Say Hello</h4>
+                                    <a class="fl" href="#">info@example.com</a>
+                                    <ul class="fi-social-list">
+                                        <li>
+                                            <a href="#"><i class="bi bi-facebook fi-social"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="bi bi-instagram fi-social"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="bi bi-twitter fi-social"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="bi bi-pinterest fi-social"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="mt-5"><b class="text-white">AxiomThemes</b> &copy; 2024. All Rights Reserved. </p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
